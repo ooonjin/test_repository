@@ -1,0 +1,40 @@
+#header{width:70%; height:100px; margin:0 auto;}
+#contents{width:70%; height:700px; float:left; }
+#sideL{width:15%; height:2000px; float:left;}
+#sideR{width:15%; height:2000px; float:right;}
+#reco{margin:0 auto; border: 1px solid black;}
+#scroll{
+    width: 70%;
+    white-space: nowrap;    /* 공백을 어떻게 처리할 지 : 공백을 채우지만 가로로 긴 줄에서도 줄 바꿈을 하지 않고 표시 -> 칸넘어서 옆으로 스크롤  */
+    /* overflow:scroll;        영역 범위의 초과 여부 상관없이 항상 테이블에 스크롤을 표시 */
+    overflow-x: scroll;     /*가로스크롤만 표시*/
+}
+#box{
+    /* width: 50%; */
+    white-space: nowrap;    /*줄바꿈 하지않음*/
+    /* overflow-x: scroll; 나중에 주석 풀기 */
+    display: inline-block;   /*화면이 작이져도 줄바꿈 하지 않음*/
+    /* margin-left: -5px; */
+    /* max-width: 100%; */
+}
+        
+#left{
+    float:left;
+}
+#image_size{
+    width:100px; height:100px;  /*메인화면 작은 생수*/
+}
+#image_bigsize{
+    width:100px; height:100px;  /*상세정보 큰 생수*/
+}
+#image_full{
+    width:80%; height:80%;    /*테이블 크기에 맞게 사이즈*/
+}
+#count{
+    counter-reset: mycounter;
+}
+
+/* background:#FBCFD0;
+background:#FFFA99;
+background:#D3D5F5;
+background:#D3D5F5; */
